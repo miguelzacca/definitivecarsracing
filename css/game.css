@@ -1,0 +1,120 @@
+.dotviewer-box {
+    position: absolute;
+    top: 40px;
+    right: 70px;
+    width: 200px;
+    height: 125px;
+    scale: 1.1;
+}
+
+#dotViewer {
+    width: 125px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    background-color: #333;
+    color: #eee;
+    letter-spacing: 1px;
+    margin-left: 30px;
+    margin-top: 10px;
+    position: absolute;
+    left: 24px;
+    top: 18px;
+}
+
+.dotviewer-box img {
+    transform: rotate(180deg);
+    position: absolute;
+    margin-top: 4px;
+    width: 100%;
+    height: 100%;
+}
+
+.dotviewer-box .led {
+    height: 72px;
+    width: 30px;
+    background-color: #333;
+    position: absolute;
+    border: 2px solid #005c31;
+    border-radius: 5px;
+    top: 28px;
+    left: 20px;
+}
+
+.lost {
+    font-size: 4.5em;
+    background-color: #00000050;
+    padding-block: 50px;
+    padding-inline: 90px;
+    color: #ddd;
+    border-radius: 25px;
+    border: 3px solid #44444405;
+    box-shadow: 0 0 10px #00000050;
+    backdrop-filter: blur(10px);
+}
+
+.lostbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100px;
+}
+
+.lostbox button {
+    width: 100px;
+    height: 100%;
+    background-color: #00000050;
+    border-radius: 25px;
+    border: 3px solid #44444405;
+    box-shadow: 0 0 10px #00000050;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    left: calc(50% + 25px + 450px / 2);
+}
+
+.lostbox button img {
+    width: 60px;
+    aspect-ratio: 1;
+    filter: invert(.9);
+}
+
+.lostbox button img:hover {
+    filter: invert(1);
+    cursor: pointer;
+}
+
+.pause {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    border: 0;
+}
+
+.pause:hover {
+    cursor: pointer;
+    filter: invert(.25);
+}
+
+.pause:focus {
+    outline: none;
+}
+
+.pause img {
+    width: 200px;
+    aspect-ratio: 1;
+    filter: invert(1);
+}
+
+#game img.explosion {
+    width: 100px;
+    aspect-ratio: 1;
+    position: absolute;
+}

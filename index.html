@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/main/pageicon.png" type="image/png">
+    <link rel="stylesheet" href="./css/root.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/game.css">
+    <link rel="stylesheet" href="./css/shop.css">
+    <link rel="stylesheet" href="./css/garage.css">
+    <script src="./js/blockmobile.js" defer></script>
+    <script src="./js/cheat.js" defer></script>
+    <script src="./js/garage.js" defer></script>
+    <script src="./js/store.js" defer></script>
+    <script src="./js/navigation.js" defer></script>
+    <script src="./js/Moviment.js" defer></script>
+    <script src="./js/Enemies.js" defer></script>
+    <script src="./js/Car.js" defer></script>
+    <script src="./js/Collisions.js" defer></script>
+    <script src="./js/main.js" defer></script>
+    <title>Definitive Cars Racing</title>
+</head>
+
+<body>
+    <section id="home">
+        <img src="./assets/main/backgroundhome.png" class="background">
+        <div class="infobar">
+            <button class="music">
+                <img src="./assets/main/music.png">
+            </button>
+            <div class="tri">
+                <img src="" class="rank">
+            </div>
+            <div class="points-box">
+                <div id="homepoints"></div>
+                <img src="./assets/main/points.png" class="points-icon">
+            </div>
+        </div>
+
+        <div class="navbar">
+            <button class="garage">
+                <img src="./assets/main/garage.png">
+            </button>
+            <button class="play">PLAY</button>
+            <button class="shop">
+                <img src="./assets/main/shop.png">
+            </button>
+        </div>
+    </section>
+
+    <section id="shop">
+        <h1 class="shoptitle">
+            <button>
+                <img src="./assets/main/return.png">
+            </button>
+            STORE
+            <div class="points-box">
+                <div id="homepoints"></div>
+                <img src="./assets/main/points.png" class="points-icon">
+            </div>
+        </h1>
+        
+        <div class="container">
+            <div class="car">
+                <img src="./assets/cars/redcar1.png">
+                <h1>REDCAR</h1>
+                <div class="carspeed">
+                    <div class="c"></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <button class="purchase">
+                    10000
+                    <img src="./assets/main/points.png" class="points-icon">
+                </button>
+                <input type="hidden" value="10000">
+            </div>
+
+            <div class="car">
+                <img src="./assets/cars/redcar2.png">
+                <h1>REDCAR 2.0</h1>
+                <div class="carspeed">
+                    <div class="s"></div>
+                    <div class="s"></div>
+                    <div></div>
+                </div>
+                <button class="purchase">
+                    20000
+                    <img src="./assets/main/points.png" class="points-icon">
+                </button>
+                <input type="hidden" value="20000">
+            </div>
+
+            <div class="car">
+                <img src="./assets/cars/whitecar2.png">
+                <h1>WHITECAR</h1>
+                <div class="carspeed">
+                    <div class="s"></div>
+                    <div class="s"></div>
+                    <div></div>
+                </div>
+                <button class="purchase">
+                    25000
+                    <img src="./assets/main/points.png" class="points-icon">
+                </button>
+                <input type="hidden" value="25000">
+            </div>
+
+            <div class="car">
+                <img src="./assets/cars/twowhitecar2.png">
+                <h1>WHITECAR 2.0</h1>
+                <div class="carspeed">
+                    <div class="s"></div>
+                    <div class="s"></div>
+                    <div></div>
+                </div>
+                <button class="purchase">
+                    30000
+                    <img src="./assets/main/points.png" class="points-icon">
+                </button>
+                <input type="hidden" value="30000">
+            </div>
+
+            <div class="car">
+                <img src="./assets/cars/yellowcar3.png">
+                <h1>YELLOWCAR</h1>
+                <div class="carspeed">
+                    <div class="m"></div>
+                    <div class="m"></div>
+                    <div class="m"></div>
+                </div>
+                <button class="purchase">
+                    40000
+                    <img src="./assets/main/points.png" class="points-icon">
+                </button>
+                <input type="hidden" value="40000">
+            </div>
+
+            <div class="car">
+                <img src="./assets/cars/whitecar3.png">
+                <h1>WHITECAR 3.0</h1>
+                <div class="carspeed">
+                    <div class="m"></div>
+                    <div class="m"></div>
+                    <div class="m"></div>
+                </div>
+                <button class="purchase">
+                    50000
+                    <img src="./assets/main/points.png" class="points-icon">
+                </button>
+                <input type="hidden" value="50000">
+            </div>
+
+            <div class="car">
+                <img src="./assets/cars/redcar3.png">
+                <h1>REDCAR 3.0</h1>
+                <div class="carspeed">
+                    <div class="m"></div>
+                    <div class="m"></div>
+                    <div class="m"></div>
+                </div>
+                <button class="purchase">
+                    40000
+                    <img src="./assets/main/points.png" class="points-icon">
+                </button>
+                <input type="hidden" value="40000">
+            </div>
+
+            <div class="car">
+                <img src="./assets/cars/greencar4.png">
+                <h1>GREENCAR</h1>
+                <div class="carspeed">
+                    <div class="b"></div>
+                    <div class="b"></div>
+                    <div class="b"></div>
+                </div>
+                <button class="purchase">
+                    70000
+                    <img src="./assets/main/points.png" class="points-icon">
+                </button>
+                <input type="hidden" value="70000">
+            </div>
+
+            <div class="car">
+                <img src="./assets/cars/sportcar4.png">
+                <h1>SPORTCAR</h1>
+                <div class="carspeed">
+                    <div class="b"></div>
+                    <div class="b"></div>
+                    <div class="b"></div>
+                </div>
+                <button class="purchase">
+                    90000
+                    <img src="./assets/main/points.png" class="points-icon">
+                </button>
+                <input type="hidden" value="90000">
+            </div>
+
+            <div class="car">
+                <img src="./assets/cars/challengecar5.png">
+                <h1>DEMONCAR</h1>
+                <div class="carspeed">
+                    <div class="n"></div>
+                    <div class="n"></div>
+                    <div class="n"></div>
+                </div>
+                <button class="purchase">
+                    250000
+                    <img src="./assets/main/points.png" class="points-icon">
+                </button>
+                <input type="hidden" value="250000">
+            </div>
+        </div>
+    </section>
+
+    <section id="garage">
+        <h1 class="garagetitle">
+            <button>
+                <img src="./assets/main/return.png">
+            </button>
+            GARAGE
+        </h1>
+
+        <div class="container">
+            <div class="car">
+                <img src="./assets/cars/bluecar1.png">
+                <h1>BLUECAR</h1>
+                <div class="carspeed">
+                    <div class="c"></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <input type="hidden" value="10000">
+                <button class="select">Select</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="game">
+        <div id="gameintro">
+            <div class="container">
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+            </div>
+        </div>
+
+        <div id="main">
+            <canvas></canvas>
+            <div class="dotviewer-box">
+                <div id="dotViewer"></div>
+                <img src="./assets/main/viewer.png" alt="viewer">
+                <div class="led"></div>
+            </div>
+
+            <div class="lostbox" style="display: none;">
+                <h1 class="lost">YOU LOST!</h1>
+                <button>
+                    <img src="./assets/main/return.png">
+                </button>
+            </div>
+
+            <button class="pause">
+                <img src="./assets/main/pause.png" alt="pause">
+            </button>
+            <img src="./assets/main/explosion.png" class="explosion" style="display: none;">
+        </div>
+    </section>
+</body>
+
+</html>

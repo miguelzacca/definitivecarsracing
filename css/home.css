@@ -1,0 +1,160 @@
+:root {
+    --homecolor: #111;
+    --navbarheight: 175px;
+}
+
+.infobar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw !important;
+    height: 100px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.points-box #homepoints {
+    color: #fff;
+    font-size: 2.5em;
+    margin-right: 10px;
+    margin-top: 1px;
+    letter-spacing: 1px;
+    text-shadow: 1px 0 0 #00000050;
+}
+
+.points-box img {
+    width: 25px;
+    aspect-ratio: 1;
+}
+
+.points-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 100px;
+}
+
+:is(.infobar, .navbar, .background) {
+    box-sizing: border-box;
+}
+
+.navbar {
+    width: 100vw;
+    height: var(--navbarheight);
+    background-color: transparent;
+    background-image: linear-gradient(0deg, var(--homecolor), transparent);
+    margin-top: -2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.navbar button:first-child {
+    margin-right: 200px;
+    background-color: transparent;
+    border: 0;
+}
+
+.navbar button:last-child {
+    margin-left: 200px;
+    background-color: transparent;
+    border: 0;
+}
+
+:where(.navbar) button:first-child img, button:last-child img {
+    width: 75px;
+    aspect-ratio: 1;
+    filter: invert(.8);
+}
+
+:where(.navbar) button:first-child img:hover, button:last-child img:hover {
+    filter: invert(1);
+    cursor: pointer;
+}
+
+#home img.background {
+    width: 100vw;
+    height: calc(100%);
+    filter: blur(5px) brightness(.75);
+}
+
+#home {
+    background-color: #555;
+}
+
+#home .play {
+    width: 300px;
+    font-size: 2.5em;
+    color: #ddd;
+    text-shadow: 1px 0 0 #aaa;
+    background-color: transparent;
+    background-image: linear-gradient(90deg, #ffffff15, #ffffff30);
+    height: 60px;
+    border: 3px solid #eee;
+}
+
+#home .play:hover {
+    cursor: pointer;
+    filter: brightness(.70);
+}
+
+#home .play:focus {
+    outline: none;
+}
+
+#home .play:active {
+    cursor: wait;
+}
+
+.music {
+    border-radius: 50%;
+    background: none;
+    position: absolute;
+    left: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 0;
+    width: 75px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+
+.music:focus {
+    outline: none;
+}
+
+.music img {
+    width: 50px;
+    aspect-ratio: 1;
+    filter: invert(.9);
+}
+
+.music img:hover {
+    filter: invert(1);
+    cursor: pointer;
+}
+
+.rank {
+    position: absolute;
+    left: 50%;
+    top: -10px;
+    transform: translate(-50%, -50%);
+    width: 75px;
+    height: max-content;
+}
+
+.tri {
+    margin-top: -125px;
+    border-top: 100px solid #333333a1;
+    border-right: 100px solid transparent;
+    border-left: 100px solid transparent;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 25%);
+}
